@@ -1,7 +1,6 @@
 <!-- pantalla de depósito -->
 
 <?php
-require ('session.php');
 
 if(isset($_POST['cuenta_destino'] )){
         $cuenta_destino = $_POST['cuenta_destino'];

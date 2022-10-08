@@ -1,7 +1,6 @@
 <!-- pantalla de retiro -->
 
 <?php
-require ('session.php');
 
 if(isset($_POST['cuenta_origen'] )){
     $cuenta_origen = $_POST['cuenta_origen'];

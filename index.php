@@ -1,6 +1,4 @@
-<?php
-
-?>
+<?php ?>
 
 <!DOCTYPE html>
 <html>
@@ -77,8 +75,15 @@
             <a href="loginB.php">Login ATM</a>
             <br><br>
             <span class="nombre">Banco UMG</span>
+            <span><br><Strong>Integrantes: </Strong>
+            <br>0900-18-1755  Eduvijes de Jesus Lazaro orellana 
+            <br>0900-17-17587 Raul Alexander Sandoval Estrada 
+            <br>0900-16-8486  Enrique Aldi Fuentes 
+            <br>0900-17-7783  Edy Belarmino Dubón Hernández
+            </span>
             </div>
         </div>
         <div class="moneda"></div>
+        <img src="img/banco.png" width="480px" alt="LogoBanco"/>
     </body>
 </html>

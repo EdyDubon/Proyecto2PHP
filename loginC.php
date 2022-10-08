@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+error_reporting(E_ALL ^ E_NOTICE);
     if(isset($_SESSION['login_user'])){
         header("location:panel_user.php");
     } else {
@@ -13,7 +13,6 @@ session_start();
 <meta charset="utf8"/>
 
 <body>
-<h1>Welcome <?php echo $_SESSION['login_user']; ?></h1> 
     <center>
         <h1> LOGIN USER </h1>
         <form action="loginUser.php" method="POST">
@@ -22,9 +21,10 @@ session_start();
 
                 NOMBRE:
                 <input type="text" name="user" placeholder="usuario"/>
-                <br>
+                <br><br>
                 CONTRASEÑA:
                 <input type="password" name="passwd" placeholder="passwd"/>
+                <br><br>
                 <input type="submit" value="LOGIN"/>
             </fieldset>
 
@@ -33,3 +33,26 @@ session_start();
 </body>
 
 </html>
+<style>
+    center{
+        width: 100px;
+    }
+
+    input[type="text"]{
+        font-size: 14pt;
+        width: 250px;
+        background-color: rgba(129, 197, 194, 0.1);
+        text-align: center;
+    }
+    input[type="password"]{
+        font-size: 14pt;
+        width: 250px;
+        background-color: rgba(129, 197, 194, 0.1);
+        text-align: center;
+    }
+    input[type="submit"]{
+        background-color: aqua;
+        width: 100px;
+        height: 30px;
+    }
+</style>

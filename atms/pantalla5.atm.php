@@ -1,7 +1,6 @@
 <!-- pantalla de TRANSFERENCIAS -->
 
 <?php
-require ('session.php');
 
 if(isset($_POST['cuenta_destino'] )){
         $cuenta_origen = $_POST['cuenta_origen'];

@@ -19,17 +19,17 @@ require 'conexion.php';
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       	if($count == 1) {
-			echo 'login OK';
+			
 			//session_register("myusername");
 			$_SESSION['login_user'] = $myusername;
 			$_SESSION['login_user_id'] = $row['id_usuario'];
 			header("location: panel_adm_admin.php");
-			echo 'login OK';
+			
 			
 		}else {
 			//$error = "Your Login Name or Password is invalid";
-			echo 'error en login';
-			printf(" <br> Desde FORM User: %s  Passwd: %s  <br>", $myusername, $mypassword);
+			//printf(" <br> Desde FORM User: %s  Passwd: %s  <br>", $myusername, $mypassword);
+			echo '<h1>Usuario o contraseña invalida</h1>';
 	 	}
   	} else {
 		echo 'Get no está definido';

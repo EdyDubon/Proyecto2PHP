@@ -1,6 +1,5 @@
 <!-- pantalla de Estado de cuenta -->
 <?php
-include('session.php');
 
 ?>
 

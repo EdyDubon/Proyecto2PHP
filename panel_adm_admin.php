@@ -236,7 +236,7 @@ window.onload=draw();
                //barras
             var X = 60; // first bar position 
             for (var i =0; i<n.length-1; i++) {
-            ctx.fillStyle = '#555'; 
+            ctx.fillStyle = '#0AF'; 
             var h = n[i];
             ctx.fillRect(X,canvas.height - h*scale_y-space_h_titles,width,(h*scale_y));
             X +=  width+15;

@@ -1,7 +1,6 @@
 <!-- pantalla de NUEVA CUENTA -->
 
 <?php
-require ('session.php');
 
 if(isset($_POST['id_cuenta'] )){
         $id_cuenta = $_POST['id_cuenta'];

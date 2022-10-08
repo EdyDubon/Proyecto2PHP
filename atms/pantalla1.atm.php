@@ -1,8 +1,4 @@
 <!-- pantalla de bienvenida (cuentas y saldos) -->
-<?php
-include('session.php');
-
-?>
 
 <h1>Bienvenido al sistema ATM</h1>
 <h3>Por favor selecciona una opción para continuar</h3>
